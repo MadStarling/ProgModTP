@@ -1,11 +1,13 @@
+package ProgModTP;
+
 class Product{
     private int productId;
     private String productName;
     private String productDescription;
     private double price;
    
-    public Product(){
-    	throw new Exception('Cannot create empty product.');
+    public Product() throws Exception{
+    	throw new Exception("Cannot create empty product.");
     }
 
     public Product(int productId, String productName, String productDescription, double price){

@@ -1,9 +1,11 @@
+package ProgModTP;
+
 abstract class Person{
     private int id;
     private String name;
    
-    public Person(){
-    	throw new Exception('Cannot create empty Person.');
+    public Person() throws Exception{
+    	throw new Exception("Cannot create empty Person.");
     }
 
     public Person(int id, String name){

@@ -1,4 +1,4 @@
-import Person.java;
+package ProgModTP;
 
 class Client extends Person{
     private String address;

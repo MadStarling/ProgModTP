@@ -1,9 +1,11 @@
+package ProgModTP;
+
 class Company{
     private int companyId;
     private String companyName;
    
-    public Company(){
-    	throw new Exception('Cannot create empty Company.');
+    public Company() throws Exception{
+    	throw new Exception("Cannot create empty Company.");
     }
 
     public Company(int companyId, String companyName){
@@ -24,6 +26,6 @@ class Company{
     }
 
     public void setCompanyName(String companyName){
-        this.companyName = productName;
+        this.companyName = companyName;
     }
 }
