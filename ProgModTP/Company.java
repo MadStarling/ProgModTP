@@ -3,14 +3,16 @@ package ProgModTP;
 class Company{
     private int companyId;
     private String companyName;
+    private Agenda agenda;
    
-    public Company() throws Exception{
+    Company() throws Exception{
     	throw new Exception("Cannot create empty Company.");
     }
 
-    public Company(int companyId, String companyName){
+    Company(int companyId, String companyName, Agenda agenda){
         this.companyId = companyId;
         this.companyName = companyName;
+        this.agenda = agenda;
    	}
 
     public int getCompanyId(){
@@ -28,4 +30,8 @@ class Company{
     public void setCompanyName(String companyName){
         this.companyName = companyName;
     }
+
+	public Agenda getAgenda() {
+		return agenda;
+	}
 }
