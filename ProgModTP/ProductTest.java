@@ -1,6 +1,7 @@
 package ProgModTP;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ public class ProductTest {
 	public void testErrorMessage(){
 		try {
 			Product p = new Product();
-			fail();
+			fail("Failed to throw Exception");
 		} catch(Exception e) {
 			assertEquals(e.getMessage(), "Cannot create empty product.");
 		}

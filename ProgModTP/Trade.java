@@ -4,9 +4,23 @@ import java.util.Iterator;
 
 class Trade {
 	private ArrayList<Product> productCart;
+	Vendor vendor;
+	Client client;
 	
-	Trade(int productCount){
+	Trade() throws Exception{
+		throw new Exception("Can't create a trade with no vendor or client.");
+	}
+	
+	Trade(Client c, Vendor v){
+		productCart = new ArrayList<Product>();
+		client = c;
+		vendor = v;
+	}
+	
+	Trade(int productCount, Client c, Vendor v){
 		productCart = new ArrayList<Product>(productCount);
+		client = c;
+		vendor = v;
 	}
 	
 	public void addProduct(Product p) {

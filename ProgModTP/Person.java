@@ -17,10 +17,6 @@ abstract class Person{
         return id;
     }
 
-    public void setID(int id){
-        this.id = id;
-    }
-
     public String getName(){
         return name;
     }

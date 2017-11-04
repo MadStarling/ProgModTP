@@ -4,7 +4,11 @@ class Client extends Person{
     private String address;
     private String phoneNumber;
     private String email;
-
+    
+    public Client() throws Exception {
+    	super();
+    }
+    
     public Client(int id, String name, String address, String phoneNumber, String email){
         super(id, name);
         this.address = address;
